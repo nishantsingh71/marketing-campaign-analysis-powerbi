@@ -1,64 +1,196 @@
-# 📊 Marketing Campaign Analysis Dashboard
+# 📊 End-to-End Marketing Campaign Analysis
 
-An end-to-end Data Analytics project that analyzes marketing campaign performance using **Microsoft Excel, Power BI, and DAX**. The dashboard provides interactive insights into campaign performance, financial metrics, customer behavior, and business recommendations to support data-driven decision-making.
-
----
-
-## 📌 Project Overview
-
-This project demonstrates the complete analytics workflow, from data cleaning and preparation to dashboard development and business insights.
-
-The objective of this project is to analyze marketing campaigns, evaluate financial performance, identify top-performing campaigns and channels, and provide actionable business recommendations through interactive Power BI dashboards.
+An end-to-end **Data Analytics** project that analyzes marketing campaign performance using **Microsoft Excel, Python, and Microsoft Power BI**. The project demonstrates the complete analytics workflow, from raw data cleaning to business insights and interactive dashboard development.
 
 ---
 
-## 🎯 Project Objectives
+## 📌 Table of Contents
 
-- Analyze marketing campaign performance.
-- Monitor Revenue, Spend, Profit, ROI, and Profit Margin.
+- [Project Overview](#-project-overview)
+- [Project Objectives](#-project-objectives)
+- [Tech Stack](#-tech-stack)
+- [Project Workflow](#-project-workflow)
+- [Project Structure](#-project-structure)
+- [Python Analysis](#-python-analysis)
+- [Power BI Dashboard](#-power-bi-dashboard)
+- [Key Business Insights](#-key-business-insights)
+- [Business Recommendations](#-business-recommendations)
+- [Dashboard Preview](#-dashboard-preview)
+- [Python Visualizations](#-python-visualizations)
+- [How to Run](#-how-to-run)
+- [Future Improvements](#-future-improvements)
+- [Connect With Me](#-connect-with-me)
+
+---
+
+# 📌 Project Overview
+
+This project analyzes **30,000 marketing campaign records** to evaluate campaign performance across different marketing channels, regions, devices, customer age groups, and financial metrics.
+
+The project follows a complete Data Analytics workflow:
+
+- Data Cleaning
+- Data Preparation
+- Feature Engineering
+- Exploratory Data Analysis (EDA)
+- Dashboard Development
+- Business Insights
+- Strategic Recommendations
+
+The objective is to transform raw marketing data into meaningful business insights that support data-driven decision-making.
+
+---
+
+# 🎯 Project Objectives
+
+- Analyze overall marketing campaign performance.
+- Measure Revenue, Spend, Profit, ROI, and Profit Margin.
 - Identify top-performing campaigns and marketing channels.
-- Analyze customer demographics and regional performance.
-- Provide business insights and strategic recommendations.
+- Analyze customer behavior across devices and age groups.
+- Study revenue trends and campaign profitability.
+- Generate business insights and actionable recommendations.
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
+### Data Cleaning
 - Microsoft Excel
+
+### Data Analysis
+- Python
+- Pandas
+- NumPy
+
+### Data Visualization
+- Matplotlib
+- Seaborn
+
+### Business Intelligence
 - Microsoft Power BI
 - DAX (Data Analysis Expressions)
 
 ---
 
-## 📂 Project Structure
+# 🔄 Project Workflow
 
 ```text
-marketing-campaign-analysis-powerbi
+Raw Dataset
+      │
+      ▼
+Excel Data Cleaning
+      │
+      ▼
+Python Data Cleaning
+      │
+      ▼
+Feature Engineering
+      │
+      ▼
+Exploratory Data Analysis (EDA)
+      │
+      ▼
+Power BI Dashboard
+      │
+      ▼
+Business Insights & Recommendations
+```
+
+---
+
+# 📂 Project Structure
+
+```text
+Marketing-Campaign-Analysis/
+
+│
 
 ├── Dashboard/
+│   └── Marketing_Campaign_Analysis.pbix
+│
 ├── Dataset/
+│   ├── Marketing_Campaign_Cleaned_Final.xlsx
+│   └── Marketing_Campaign_Messy_Dataset.csv
+│
 ├── Documentation/
+│   └── Marketing_Campaign_Analysis_Project_Documentation.docx
+│
 ├── Images/
+│
+├── Python/
+│   ├── Marketing_Campaign_Analysis.ipynb
+│   ├── Marketing_Campaign_Final.csv
+│   └── Marketing_Campaign_Messy_Dataset.csv
+│
 └── README.md
 ```
 
 ---
 
-## 📊 Dashboard Pages
+# 🐍 Python Analysis
 
-### 1️⃣ Executive Overview
+The Python notebook includes:
 
-- Revenue KPI
-- Spend KPI
-- Profit KPI
-- ROI KPI
+### ✔ Data Understanding
+
+- Dataset Overview
+- Data Types
+- Missing Values Analysis
+- Statistical Summary
+
+### ✔ Data Cleaning
+
+- Missing Value Handling
+- Duplicate Detection
+- Data Type Conversion
+- Text Standardization
+- String Cleaning
+
+### ✔ Feature Engineering
+
+- Profit
+- Profit Margin (%)
+- ROI (%)
+- CTR (%)
+- Conversion Rate (%)
+- Campaign Duration
+- Month
+- Month Number
+
+### ✔ Exploratory Data Analysis
+
+- Revenue Distribution
+- Revenue by Channel
+- Monthly Revenue Trend
+- Spend vs Revenue Analysis
+- Revenue Outlier Detection
+- Correlation Heatmap
+- Profit by Marketing Channel
+- Device Performance
+- Age Group Performance
+
+### ✔ Business Insights
+
+- Executive Summary
+- Business Findings
+- Strategic Recommendations
+
+---
+
+# 📊 Power BI Dashboard
+
+The Power BI dashboard contains four interactive pages.
+
+## 1️⃣ Executive Overview
+
+- KPI Cards
 - Revenue Trend
 - Revenue by Channel
 - Regional Performance
 
 ---
 
-### 2️⃣ Campaign Performance
+## 2️⃣ Campaign Performance
 
 - Campaign Comparison
 - ROI Analysis
@@ -67,45 +199,45 @@ marketing-campaign-analysis-powerbi
 
 ---
 
-### 3️⃣ Financial Analysis
+## 3️⃣ Financial Analysis
 
-- Revenue vs Spend Trend
+- Revenue vs Spend
 - Profit Analysis
 - Profit Margin
 - Financial Summary
-- Spend Distribution
 
 ---
 
-### 4️⃣ Business Insights
+## 4️⃣ Business Insights
 
 - Executive Summary
-- Dynamic KPI Cards
-- Key Business Insights
-- Strategic Recommendations
+- Key Findings
+- Recommendations
+- Business Takeaways
 
 ---
 
-## 📈 Key Business Insights
+# 📈 Key Business Insights
 
-- Generated **₹1.33B Revenue**
-- Achieved **₹871.30M Profit**
-- Overall ROI of **190.6%**
-- Profit Margin of **65.59%**
-- Facebook emerged as the top-performing marketing channel.
-- North region contributed the highest revenue share.
-- Mobile users represented the strongest device segment.
+- Generated **₹1.33 Billion Revenue**
+- Generated **₹871 Million Profit**
+- Achieved **190.6% ROI**
+- Profit Margin reached **65.59%**
+- Marketing Spend and Revenue showed a strong positive correlation.
+- Facebook emerged as one of the highest-performing marketing channels.
+- Mobile users generated the highest customer engagement.
+- High-revenue campaigns were identified through outlier analysis.
 
 ---
 
-## 💡 Business Recommendations
+# 💡 Business Recommendations
 
-- Scale high-performing campaigns.
-- Increase investment in Facebook and Google Ads.
-- Expand campaigns in South and East regions.
-- Adopt a mobile-first marketing strategy.
-- Continuously monitor campaign KPIs.
-
+- Increase investment in high-profit marketing channels.
+- Allocate more budget to high-performing customer segments.
+- Improve underperforming marketing campaigns.
+- Continue optimizing mobile user experience.
+- Monitor campaign profitability rather than revenue alone.
+- Replicate strategies used by high-performing campaigns.
 ---
 
 ## 📷 Dashboard Preview
@@ -130,14 +262,38 @@ marketing-campaign-analysis-powerbi
 
 ---
 
-## 📄 Documentation
+# 📉 Python Visualizations
 
-Detailed project documentation is available in the **Documentation** folder.
+- Revenue Distribution
+- Revenue by Channel
+- Monthly Revenue Trend
+- Spend vs Revenue
+- Revenue Box Plot
+- Correlation Heatmap
+- Profit by Channel
+- Device Analysis
+- Age Group Analysis
 
 ---
 
-## 📬 Connect With Me
+# 🚀 Future Improvements
 
-- LinkedIn: www.linkedin.com/in/nishantsingh11
-- GitHub: https://github.com/nishantsingh71
+- Predict campaign performance using Machine Learning.
+- Build an interactive Streamlit dashboard.
+- Integrate real-time marketing campaign data.
+- Perform customer segmentation using clustering.
+- Build campaign performance forecasting models.
 
+---
+
+##  📬 Connect With Me
+
+**LinkedIn**
+
+https://www.linkedin.com/in/nishantsingh11
+
+**GitHub**
+
+https://github.com/nishantsingh71
+
+---
